@@ -1,4 +1,4 @@
-// UACsha1.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// UACsha1.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
@@ -1330,7 +1330,7 @@ bool ImperialBankReadBlock(imperial_bank_t &obj, string section, string block, i
    
     BitFieldWrite(out, ASCIIUtilBase64ToInt(s, end), BitFieldRemaining(out));
     
-    ImperialBankCryptKey(ekey, obj.key, key, hkey);//Ëã·¨
+    ImperialBankCryptKey(ekey, obj.key, key, hkey);//ç®—æ³•
     ImperialBankBlockCrypt(ekey, out);
   
     return ImperialBankBlockValidate(hkey, out);
